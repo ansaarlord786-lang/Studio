@@ -1,0 +1,11 @@
+:root{--bg:#0f1724;--panel:#0b1220;--muted:#94a3b8}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:#e6eef8}
+.app{display:grid;grid-template-columns:360px 1fr 560px;gap:12px;height:100vh;padding:12px}
+.header{height:44px;display:flex;align-items:center;gap:10px}
+.left-pane{display:flex;flex-direction:column;gap:8px}
+.editor-area{background:var(--panel);border-radius:8px;padding:8px;flex:1;display:flex;flex-direction:column}
+.file-tree{height:160px;overflow:auto}
+.preview{background:#fff;border-radius:8px;overflow:hidden}
+.console{height:180px;background:#0a0f14;border-radius:8px;padding:8px;color:#e6eef8;overflow:auto}
+@media (max-width:900px){.app{grid-template-columns:1fr;grid-template-rows:auto 1fr 280px}}

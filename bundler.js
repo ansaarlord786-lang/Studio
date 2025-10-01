@@ -1,0 +1,1 @@
+export async function bundleProject(project, mode='static'){ const html = project.files['index.html'] || '<html><body></body></html>'; return html }

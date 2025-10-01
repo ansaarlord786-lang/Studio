@@ -1,0 +1,3 @@
+export function blankProject(){ return {name:'untitled', files:{'index.html':'<html><body><h1>Hello LiveCode</h1></body></html>'}} }
+export function loadProjectFromStorage(){ try{ return JSON.parse(localStorage.getItem('livecode_project_v1')) }catch(e){return null} }
+export function saveProjectToStorage(project){ try{ localStorage.setItem('livecode_project_v1', JSON.stringify(project)) }catch(e){} }
